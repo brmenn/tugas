@@ -1,0 +1,38 @@
+.bold {
+    font-weight: bold;
+}
+
+.bg-gray {
+  background-image: url("https://consumedmagazine.com/wp-content/uploads/2023/06/consumed-media-bocchi-the-rock-review.png");
+  background-size: cover;
+  background-attachment: fixed; /* ⬅️ ini yang bikin diam */
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.text-sub{
+    color: rgb(156, 0, 0);
+}
+
+.bg-nav{
+    background-color: black;
+}
+
+.bg-footer{
+background-color: black;
+}
+
+a{
+    font-size: 18px;
+}
+
+p{
+    font-family: monospace;
+    color: white;
+    font-size: 18px;
+}
