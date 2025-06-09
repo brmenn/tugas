@@ -48,8 +48,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url('image/banyuwangi.jpg') no-repeat center center;
     background-size: cover;
-    height: 100vh;
-    min-height: 600px;
+    height: 60vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -118,6 +117,15 @@
 
 .card-cover:hover {
     transform: scale(1.03);
+}
+
+.h-eff{
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.h-eff:hover{
+    transform: scale(1.1);
 }
 
 .card-info {
