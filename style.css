@@ -64,7 +64,7 @@
     pointer-events: none;
 }
 
-.hero-overlay .container{
+.hero-overlay .container {
     z-index: 2;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .text-shadow-1 {
-    text-shadow: 0 .5rem 1.5rem rgb(0, 0, 0);
+    text-shadow: 0 .5rem .5rem rgb(0, 0, 0);
 }
 
 .text-shadow-2 {
@@ -102,6 +102,29 @@
 
 .text-shadow-3 {
     text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+}
+
+.carousel-inner {
+    height: 300px;
+    /* Tinggi tetap carousel */
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc40000;
+    /* Opsional: latar belakang agar rapi saat gambar kecil */
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    /* Tidak akan crop, tapi tetap proporsional */
 }
 
 .card-cover {
@@ -119,13 +142,24 @@
     transform: scale(1.03);
 }
 
-.h-eff{
+.h-eff {
     position: relative;
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.h-eff:hover{
-    transform: scale(1.1);
+.h-eff:hover {
+    transform: scale(1.04);
+}
+
+.h-eff2 {
+    position: relative;
+    background-color: #ff88004f;
+    transition: all 0.5s ease;
+}
+
+.h-eff2:hover {
+    transform: scale(1.03);
+    background-color: #ff8800;
 }
 
 .card-info {
