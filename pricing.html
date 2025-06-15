@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour & Travel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-dark text-white">
+    <!-- Loading Animation -->
+    <div id="preloader"
+        class="position-fixed top-0 start-0 vh-100 vw-100 bg-dark z-3 d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-danger" style="width: 4rem; height: 4rem;"></div>
+    </div>
+
+    <div id="content">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tour & Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="pricing.html">Harga & Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Content -->
+    <div class="container-fluid pt-5 mt-5">
+
+        <div class="card mb-3">
+            <div class="card-body d-flex flex-column flex-md-row align-items-center">
+                <img src="image/van.png" alt="Minibus" class="img-fluid me-md-3 mb-3 mb-md-0" style="max-width: 200px;">
+                <div>
+                    <h3>Minibus</h3>
+                    <p>Minibus adalah kendaraan penumpang berukuran sedang, cocok untuk perjalanan keluarga atau
+                        rombongan kecil.</p>
+                    <a href="pricing.html#minibus" class="btn btn-primary">Lihat Info</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body d-flex flex-column flex-md-row align-items-center">
+                <img src="image/bus.png" alt="Bus" class="img-fluid me-md-3 mb-3 mb-md-0" style="max-width: 200px;">
+                <div>
+                    <h3>Bus</h3>
+                    <p>Bus adalah kendaraan penumpang berukuran besar, cocok untuk perjalanan sekolah atau rombongan
+                        besar.</p>
+                    <a href="pricing.html#bus" class="btn btn-primary">Lihat Info</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body d-flex flex-column flex-md-row align-items-center">
+                <img src="image/pesawat.png" alt="Pesawat" class="img-fluid me-md-3 mb-3 mb-md-0"
+                    style="max-width: 200px;">
+                <div>
+                    <h3>Pesawat</h3>
+                    <p>Pesawat terbang adalah moda transportasi udara yang cepat dan efisien untuk perjalanan jarak
+                        jauh.</p>
+                    <a href="pricing.html#pesawat" class="btn btn-primary">Lihat Info</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body d-flex flex-column flex-md-row align-items-center">
+                <img src="image/kereta.png" alt="Kereta Api" class="img-fluid me-md-3 mb-3 mb-md-0"
+                    style="max-width: 200px;">
+                <div>
+                    <h3>Kereta Api</h3>
+                    <p>Kereta api adalah sarana transportasi darat yang populer untuk perjalanan antar kota dengan
+                        kenyamanan tinggi.</p>
+                    <a href="pricing.html#kereta" class="btn btn-primary">Lihat Info</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- galery -->
+        <section id="minibus" class="mb-5 px-3" style="padding-top: 30px;">
+            <div class="bg-opacity-25 rounded-4 p-4 h-eff2 main-binfo">
+                <h2 class="fw-bold text-center text-light" style="font-family: monospace;">Interior Minibus</h2>
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-6">
+                        <div id="carouselMinibus" class="carousel slide rounded-4 shadow" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselMinibus" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselMinibus" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselMinibus" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="image/minibus-int.jpg" alt="Minibus Interior"
+                                        class="d-block w-100 rounded-4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="image/minibus-int-top.jpg" alt="Minibus Top"
+                                        class="d-block w-100 rounded-4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="image/minibus-out.jpg" alt="Minibus Outside"
+                                        class="d-block w-100 rounded-4" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMinibus"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMinibus"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 main-info">
+                        <div class="bg-dark bg-opacity-50 p-3 rounded-3">
+                            <h4 class="text-center mb-3">Informasi Minibus</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Kapasitas:</strong> 15–18 Orang</li>
+                                <li><strong>Harga sewa 1 kursi:</strong> Rp 200.000 – Rp 400.000</li>
+                                <li><strong>Harga sewa 1 unit:</strong> Rp1.000.000 – Rp1.800.000/hari</li>
+                                <li><strong>Fasilitas:</strong> AC, reclining seat, musik, bagasi</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary btn-lg mt-3 w-100">
+                                <i class="fas fa-concierge-bell me-2"></i>Booking
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bus" class="px-3">
+            <div class="bg-opacity-25 rounded-4 p-4 h-eff2 main-binfo">
+                <h2 class="fw-bold text-center text-light" style="font-family: monospace;">Interior Bus</h2>
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-6">
+                        <div id="carouselBus" class="carousel slide rounded-4 shadow" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselBus" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselBus" data-bs-slide-to="1"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="image/bus-int.jpg" alt="Bus Interior" class="d-block w-100 rounded-4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="image/bus.jpg" alt="Bus Outside" class="d-block w-100 rounded-4" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBus"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselBus"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 main-info">
+                        <div class="bg-dark bg-opacity-50 p-3 rounded-3">
+                            <h4 class="text-center mb-3">Informasi Bus</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Kapasitas:</strong> 30–60 Orang</li>
+                                <li><strong>Harga sewa 1 kursi:</strong> Rp 150.000 – Rp 300.000</li>
+                                <li><strong>Harga sewa 1 unit:</strong>
+                                    <ul>
+                                        <li>30–35 seat: Rp2.000.000 – Rp3.500.000</li>
+                                        <li>45–60 seat: Rp3.500.000 – Rp6.000.000</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Fasilitas:</strong> Full AC, TV, karaoke, toilet (opsional), bagasi luas
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary btn-lg mt-3 w-100">
+                                <i class="fas fa-concierge-bell me-2"></i>Booking
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kereta" class="mb-5 px-3" style="padding-top: 30px;">
+            <div class="bg-opacity-25 rounded-4 p-4 h-eff2 main-binfo">
+                <h2 class="fw-bold text-center text-light" style="font-family: monospace;">Interior Kereta</h2>
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-6">
+                        <div id="carouselKereta" class="carousel slide rounded-4 shadow" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselKereta" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselKereta" data-bs-slide-to="1"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="image/kereta-int.jpg" alt="kereta Interior"
+                                        class="d-block w-100 rounded-4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="image/kereta-out.jpg" alt="kereta Outside"
+                                        class="d-block w-100 rounded-4" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselKereta"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselKereta"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 main-info">
+                        <div class="bg-dark bg-opacity-50 p-3 rounded-3">
+                            <h4 class="text-center mb-3">Informasi Kereta</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Kapasitas:</strong> 100 – 1.000 Orang</li>
+                                <li><strong>Harga sewa 1 kursi:</strong> Rp 100.000 – Rp 400.000</li>
+                                <li><strong>Harga sewa 1 unit:</strong> Rp1.000.000 – Rp1.800.000/hari</li>
+                                <li><strong>Fasilitas:</strong> AC, kursi reclining, toilet di setiap gerbong, ruang
+                                    makan/kafetaria, ruang istirahat, sistem audio pengumuman, wifi (tergantung
+                                    layanan), keamanan ketat</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary btn-lg mt-3 w-100">
+                                <i class="fas fa-concierge-bell me-2"></i>Booking
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pesawat" class="px-3 mb-5">
+            <div class="bg-opacity-25 rounded-4 p-4 h-eff2 main-binfo">
+                <h2 class="fw-bold text-center text-light" style="font-family: monospace;">Interior Pesawat</h2>
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-6">
+                        <div id="carouselPesawat" class="carousel slide rounded-4 shadow" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselPesawat" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselPesawat" data-bs-slide-to="1"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="image/pesawat-int.jpg" alt="Pesawat Interior"
+                                        class="d-block w-100 rounded-4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="image/pesawat-out.jpg" alt="Pesawat Outside"
+                                        class="d-block w-100 rounded-4" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPesawat"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselPesawat"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 main-info">
+                        <div class="bg-dark bg-opacity-50 p-3 rounded-3">
+                            <h4 class="text-center mb-3">Informasi Pesawat</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Kapasitas:</strong> 6 – 20 Orang</li>
+                                <li><strong>Harga sewa 1 kursi:</strong> 500.000 – Rp 1.200.000</li>
+                                <li><strong>Harga sewa 1 unit:</strong> 50.000.000 – Rp 300.000.000 / jam</li>
+                                <li><strong>Fasilitas:</strong> Kursi nyaman, AC, TV, toilet, layanan makanan dan
+                                    minuman
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary btn-lg mt-3 w-100">
+                                <i class="fas fa-concierge-bell me-2"></i>Booking
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <footer class="text-white py-4" style="background-color: rgba(255, 255, 255, 0.199);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold">Tour & Travel</h5>
+                    <p>Traveling Murah, Cepat dan Nyaman.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold">Tautan</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Beranda</a></li>
+                        <li><a href="layanan.html" class="text-white">Layanan</a></li>
+                        <li><a href="harga.html" class="text-white">Harga</a></li>
+                        <li><a href="galeri.html" class="text-white">Galeri</a></li>
+                        <li><a href="contact.html" class="text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="fw-bold">Kontak Kami</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Jl. Laundry No. 123, Jakarta</li>
+                        <li><i class="fas fa-phone me-2"></i> (021) 1234-5678</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@laundryexpress.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Jam Operasional</h5>
+                    <ul class="list-unstyled">
+                        <li>Senin - Jumat: 08.00 - 20.00</li>
+                        <li>Sabtu: 08.00 - 18.00</li>
+                        <li>Minggu: 09.00 - 15.00</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Tour & Travel. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -106,11 +106,9 @@
 
 .carousel-inner {
     height: 300px;
-    /* Tinggi tetap carousel */
     align-items: center;
     justify-content: center;
     background-color: #ffc40000;
-    /* Opsional: latar belakang agar rapi saat gambar kecil */
 }
 
 .carousel-item {
@@ -124,7 +122,6 @@
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
-    /* Tidak akan crop, tapi tetap proporsional */
 }
 
 .card-cover {
@@ -177,6 +174,25 @@
 .card-cover:hover .card-info {
     opacity: 1;
 }
+
+.main-binfo:hover .main-info {
+    opacity: 1;
+}
+
+.main-info {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.main-binfo:hover .off-info {
+    opacity: 0;
+}
+
+.off-info {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
 
 .feature-icon-small {
     width: 3rem;
