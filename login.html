@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login To Continue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="form-container mt-4 container" id="register">
+      <h3 class="mb-4">Daftar Account</h3>
+      <form id="registerForm">
+        <div class="mb-3">
+          <label for="regName" class="form-label">Nama Lengkap</label>
+          <input
+            type="text"
+            class="form-control"
+            id="regName"
+            required
+            minlength="5"
+            maxlength="50"
+          />
+          <div class="invalid-feedback">Nama harus 5-50 karakter</div>
+        </div>
+        <div class="mb-3">
+          <label for="regEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="regEmail" required />
+          <div class="invalid-feedback">Masukkan email yang valid</div>
+        </div>
+        <div class="mb-3">
+          <label for="regPhone" class="form-label">Nomor Telepon</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="regPhone"
+            pattern="[0-9]{10,13}"
+            required
+          />
+          <div class="invalid-feedback">
+            Masukkan nomor telepon yang valid (10-13 angka)
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="regPassword" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="regPassword"
+            required
+          />
+          <div class="invalid-feedback">Password harus memenuhi kriteria</div>
+          <div class="password-strength mt-2">
+            <div class="password-strength-bar"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="regConfirmPassword" class="form-label"
+            >Konfirmasi Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="regConfirmPassword"
+            required
+          />
+          <div class="invalid-feedback">Password tidak cocok</div>
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="agreeTerms"
+            required
+          />
+          <label class="form-check-label" for="agreeTerms"
+            >Saya setuju dengan <a href="#">syarat dan ketentuan</a></label
+          >
+          <div class="invalid-feedback">
+            Anda harus menyetujui syarat dan ketentuan
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Daftar Sekarang</a>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
