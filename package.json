@@ -1,0 +1,25 @@
+{
+  "name": "tugas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brmenn/tugas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brmenn/tugas/issues"
+  },
+  "homepage": "https://github.com/brmenn/tugas#readme",
+  "description": "",
+  "dependencies": {
+    "animejs": "^4.0.2",
+    "popmotion": "^11.0.5"
+  }
+}

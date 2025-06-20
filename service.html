@@ -14,9 +14,14 @@
 
 <body class="bg-dark">
     <!-- Loading Animation -->
-    <div id="preloader"
-        class="position-fixed top-0 start-0 vh-100 vw-100 bg-dark d-flex justify-content-center align-items-center">
-        <div class="spinner-border text-danger" style="width: 4rem; height: 4rem;"></div>
+        <div id="preloader"
+        class="position-fixed top-0 start-0 vh-100 vw-100 bg-dark d-flex flex-column justify-content-center align-items-center z-3">
+
+        <div class="spinner-border text-danger"
+            style="width: 4rem; height: 4rem;"></div>
+        <div class="w-50 mt-4 bg-secondary rounded-pill overflow-hidden">
+            <div id="progress-bar" class="rounded-pill"></div>
+        </div>
     </div>
 
     <!-- Body Content -->
@@ -51,38 +56,8 @@
             </div>
         </header>
 
+        <!-- container table responsif -->
         <div class="container mt-5 text-white">
-            <div class="bg-opacity-25 rounded-4 p-4 h-eff">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <img src="image/1.png" alt="1" width="40%">
-                        <h3 class="text-danger">Service Quality</h3>
-                        <p>Driven by unwavering dedication and tireless
-                            passion, we are devoted to delivering only the
-                            finest. Excellence is our promise, your
-                            satisfaction, our highest priority.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="image/2.png" alt="2" width="40%">
-                        <h3 class="text-danger">The Best Offer</h3>
-                        <p>We curate truly exceptional travel experiences
-                            designed to leave a lasting impression. Your
-                            dream
-                            journey begins here, where excellence meets
-                            every destination.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="image/3.png" alt="3" width="40%">
-                        <h3 class="text-danger">Easy and Efficient</h3>
-                        <p>Empowered by seamless technology, we provide
-                            effortless access to travel services. Elevated
-                            by
-                            intelligent, cost effective solutions. Your
-                            journey, refined at every step.</p>
-                    </div>
-                </div>
-            </div>
-            <br>
 
             <div class="table-responsive">
                 <h3>Destinasi yang dapat anda kunjungi</h3>
@@ -219,9 +194,9 @@
                         <h5 class="fw-bold">Tautan</h5>
                         <ul class="list-unstyled">
                             <li><a href="index.html" class="text-white">Beranda</a></li>
-                            <li><a href="layanan.html" class="text-white">Layanan</a></li>
+                            <li><a href="service.html" class="text-white">Layanan</a></li>
                             <li><a href="pricing.html" class="text-white">Harga & Info</a></li>
-                            <li><a href="galeri.html" class="text-white">Galeri</a></li>
+              
                             <li><a href="contact.html" class="text-white">Kontak</a></li>
                         </ul>
                     </div>
@@ -249,7 +224,7 @@
             </div>
         </footer>
 
-        <script src="index.js"></script>
+        <script type="module" src="index.js"></script>
 </body>
 
 </html>

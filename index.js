@@ -1,3 +1,22 @@
+import { animate } from 'https://cdn.skypack.dev/popmotion';
+
+const bar = document.getElementById('progress-bar');
+const preloader = document.getElementById('preloader');
+
+animate({
+  from: 0,
+  to: 100,
+  duration: 2000,
+  onUpdate: (latest) => {
+    bar.style.width = `${latest}%`;
+  },
+  onComplete: () => {
+    // Sembunyikan preloader setelah loading selesai
+    preloader.style.opacity = '0';
+    setTimeout(() => preloader.style.display = 'none', 500);
+  }
+});
+
 window.addEventListener("load", () => {
   const preloader = document.getElementById("preloader");
   const content = document.getElementById("content");
@@ -210,13 +229,51 @@ function validateConfirmPassword(confirmInput, passwordInput) {
 }
 
 document.getElementById('registerForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
     const passwordInput = document.getElementById('regPassword');
     const confirmInput = document.getElementById('regConfirmPassword');
     
     const isPasswordValid = validatePassword(passwordInput);
     const isConfirmValid = validateConfirmPassword(confirmInput, passwordInput);
     
-    if (!isPasswordValid || !isConfirmValid) {
-        e.preventDefault();
+    if (isPasswordValid && isConfirmValid) {
+        window.location.href = 'index.html';
+    } else {
+        alert('test')
     }
 });
+
+document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    const message = document.getElementById('message');
+    
+    const isNameLength = validateTextInput(name, 6, 32);
+    const isValidEmail = validateEmail(email);
+    const isValidPhone = validatePhone(phone);
+    const isValidMessage = validateForm(message);
+    
+    if (isNameLength && isValidEmail && isValidPhone && isValidMessage) {
+        window.location.href = 'index.html';
+    } else {
+    }
+});
+
+function showForm(formType) {
+    const formMessage = document.getElementById("form-message");
+    const formRegister = document.getElementById("form-register");
+
+    if (formType === "message") {
+      formMessage.classList.remove("d-none");
+      formRegister.classList.add("d-none");
+    } else if (formType === "register") {
+      formRegister.classList.remove("d-none");
+      formMessage.classList.add("d-none");
+    }
+  }
+
+  
